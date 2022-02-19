@@ -15,9 +15,9 @@ import (
 type myInt int
 
 const (
-	triangle = 3
-	square   = 4
-	circle   = 0
+	SidesTriangle = 3
+	SidesSquare   = 4
+	SidesCircle   = 0
 )
 
 func squareSquare(sideLen float64) float64 {
@@ -34,11 +34,11 @@ func circleSquare(sideLen float64) float64 {
 
 func CalcSquare(sideLen float64, sidesNum myInt) float64 {
 	switch sidesNum {
-	case square:
+	case SidesSquare:
 		return squareSquare(sideLen)
-	case triangle:
+	case SidesTriangle:
 		return triangleSquare(sideLen)
-	case circle:
+	case SidesCircle:
 		return circleSquare(sideLen)
 	}
 
